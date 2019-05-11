@@ -178,7 +178,7 @@ Please refer to the [Changelog][action-cable] for detailed changes.
     `ActionCable::Connection`.
     ([Pull Request](https://github.com/rails/rails/pull/34194))
 
-*   Convert the Action Cable JavaScript package from CoffeeScript to ES2015 and
+*   Convert the Action Cable Javascript package from CoffeeScript to ES2015 and
     publish the source code in the npm distribution.
     ([Pull Request](https://github.com/rails/rails/pull/34370))
 
@@ -229,7 +229,7 @@ Please refer to the [Changelog][action-pack] for detailed changes.
 *   Allow the use of `parsed_body` in `ActionController::TestCase`.
     ([Pull Request](https://github.com/rails/rails/pull/34717))
 
-*   Raise an `ArgumentError` when multiple root routes exist in the same context
+*   Raise an `ArgumentError` when multiple root routes exists in the same context
     without `as:` naming specifications.
     ([Pull Request](https://github.com/rails/rails/pull/34494))
 
@@ -298,14 +298,14 @@ Please refer to the [Changelog][action-view] for detailed changes.
 
 ### Notable changes
 
-*   Clear Action View cache in development only on file changes, speeding up
+*   Clear ActionView cache in development only on file changes, speeding up
     development mode.
     ([Pull Request](https://github.com/rails/rails/pull/35629))
 
 *   Move all of the Rails npm packages into a `@rails` scope.
     ([Pull Request](https://github.com/rails/rails/pull/34905))
 
-*   Only accept formats from registered MIME types.
+*   Only accept formats from registered Mime types.
     ([Pull Request](https://github.com/rails/rails/pull/35604), [Pull Request](https://github.com/rails/rails/pull/35753))
 
 *   Add allocations to the template and partial rendering server output.
@@ -323,7 +323,7 @@ Please refer to the [Changelog][action-view] for detailed changes.
     enable `ActionView::Template` finalizers.
     ([Pull Request](https://github.com/rails/rails/pull/32418))
 
-*   Extract the JavaScript `confirm` call to its own, overridable method in `rails_ujs`.
+*   Extract the JS `confirm` call to its own, overridable method in `rails_ujs`.
     ([Pull Request](https://github.com/rails/rails/pull/32404))
 
 *   Add a `action_controller.default_enforce_utf8` configuration option to handle
@@ -364,7 +364,7 @@ Please refer to the [Changelog][action-mailer] for detailed changes.
 *   Add `perform_deliveries` to payload of `deliver.action_mailer` notification.
     ([Pull Request](https://github.com/rails/rails/pull/33824))
 
-*   Improve the logging message when `perform_deliveries` is false to indicate
+*   Improve the logging message when `perform_deliveries` is `false` to indicate
     that sending of emails was skipped.
     ([Pull Request](https://github.com/rails/rails/pull/33824))
 
@@ -402,7 +402,7 @@ Please refer to the [Changelog][active-record] for detailed changes.
 *   Remove support for passing the column name to `count` when a block is passed.
     ([Commit](https://github.com/rails/rails/commit/67356f2034ab41305af7218f7c8b2fee2d614129))
 
-*   Remove support for delegation of missing methods in a relation to Arel.
+*   Remove support for delegation of missing methods in a relation to arel.
     ([Commit](https://github.com/rails/rails/commit/d97980a16d76ad190042b4d8578109714e9c53d0))
 
 *   Remove support for delegating missing methods in a relation to private methods of the class.
@@ -457,7 +457,7 @@ Please refer to the [Changelog][active-record] for detailed changes.
 *   Add `ActiveRecord::Relation#extract_associated` for extracting associated records from a relation.
     ([Pull Request](https://github.com/rails/rails/pull/35784))
 
-*   Add `ActiveRecord::Relation#annotate` for adding SQL comments to ActiveRecord::Relation queries.
+*   Add `ActiveRecord::Relation#annotate` for adding SQL comments to `ActiveRecord::Relation` queries.
     ([Pull Request](https://github.com/rails/rails/pull/35617))
 
 *   Add support for setting Optimizer Hints on databases.
@@ -562,7 +562,7 @@ Please refer to the [Changelog][active-record] for detailed changes.
 *   Use the utf8mb4 character set by default in MySQL.
     ([Pull Request](https://github.com/rails/rails/pull/33608))
 
-*   Add the ability to filter out sensitive data in `#inspect`
+*   Add the ability to filter out sensitive data in `#inspect`.
     ([Pull Request](https://github.com/rails/rails/pull/33756), [Pull Request](https://github.com/rails/rails/pull/34208))
 
 *   Change `ActiveRecord::Base.configurations` to return an object instead of a hash.
@@ -577,13 +577,13 @@ Please refer to the [Changelog][active-record] for detailed changes.
 *   Allow the `:to_table` option of `remove_foreign_key` to be invertible.
     ([Pull Request](https://github.com/rails/rails/pull/33530))
 
-*   Fix default value for MySQL time types with specified precision.
+*   Fix default value for mysql time types with specified precision.
     ([Pull Request](https://github.com/rails/rails/pull/33280))
 
 *   Fix the `touch` option to behave consistently with `Persistence#touch` method.
     ([Pull Request](https://github.com/rails/rails/pull/33107))
 
-*   Raise an exception for duplicate column definitions in Migrations.
+*   Raise an exception for duplicate column definitions in migrations.
     ([Pull Request](https://github.com/rails/rails/pull/33029))
 
 *   Bump the minimum SQLite version to 3.8.
@@ -724,7 +724,7 @@ Please refer to the [Changelog][active-model] for detailed changes.
 *   Fix year value when casting a multiparameter time hash.
     ([Pull Request](https://github.com/rails/rails/pull/34990))
 
-*   Type cast falsy boolean symbols on boolean attribute as false.
+*   Type cast falsy boolean symbols on boolean attribute as `false`.
     ([Pull Request](https://github.com/rails/rails/pull/35794))
 
 *   Return correct date while converting parameters in `value_from_multiparameter_assignment`
@@ -822,10 +822,10 @@ Please refer to the [Changelog][active-support] for detailed changes.
 *   Allow `Range#===` and `Range#cover?` methods to work with `Range` argument.
     ([Pull Request](https://github.com/rails/rails/pull/32938))
 
-*   Support key expiry in `increment/decrement` operations of RedisCacheStore.
+*   Support key expiry in `increment/decrement` operations of `ActiveSupport::Cache::RedisCacheStore`.
     ([Pull Request](https://github.com/rails/rails/pull/33254))
 
-*   Add cpu time, idle time, and allocations features to log subscriber events.
+*   Add CPU time, idle time, and allocations features to log subscriber events.
     ([Pull Request](https://github.com/rails/rails/pull/33449))
 
 *   Add support for event object to the Active Support notification system.
@@ -836,7 +836,7 @@ Please refer to the [Changelog][active-support] for detailed changes.
     ([Pull Request](https://github.com/rails/rails/pull/25437))
 
 *   Add `Array#extract!` method which removes and returns the elements for which
-    block returns a true value.
+    block returns `true`.
     ([Pull Request](https://github.com/rails/rails/pull/33137))
 
 *   Keep an HTML-safe string HTML-safe after slicing.
